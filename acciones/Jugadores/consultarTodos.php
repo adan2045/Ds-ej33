@@ -8,7 +8,7 @@ header('Content-Type: application/json');
 
 
 
-$resp= new ConsultarResponse ();
+$resp= new ConsultatodosResponse ();
 
 $c=new Club();
 $c->Nombre = 'Paris Saint-Germain Football Club';
@@ -40,7 +40,8 @@ $j2->Club=$c2
 
 
 
-$resp->Jugador = $j1;
+$resp->$listJugador() = $j1;
+$resp->$listJugador() = $j2;
 
 
 echo json_encode($resp);
