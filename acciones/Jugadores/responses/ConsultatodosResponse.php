@@ -1,7 +1,7 @@
 <?php
 class ConsultatodosResponse
 {
-    public $listJugador = array();
+    public $ListJugadores = array();
   
     
 }
